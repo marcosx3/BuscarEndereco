@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemas.buscadorcep.BuscadorController">
+   <children>
+      <Label alignment="CENTER" layoutX="217.0" layoutY="27.0" prefHeight="16.0" prefWidth="181.0" text="Buscar Endereço" />
+      <Separator layoutX="53.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="7.0" />
+      <Label layoutX="76.0" layoutY="87.0" text="CEP" />
+      <Label layoutX="76.0" layoutY="116.0" text="Logradouro" />
+      <Label layoutX="76.0" layoutY="146.0" text="Complemento" />
+      <Label layoutX="76.0" layoutY="173.0" text="Bairro" />
+      <Label layoutX="76.0" layoutY="200.0" text="Localidade" />
+      <Label layoutX="81.0" layoutY="251.0" text="UF" />
+      <Label layoutX="74.0" layoutY="283.0" text="IBGE" />
+      <Label layoutX="75.0" layoutY="313.0" text="DDD" />
+      <TextField fx:id="txtCEP" layoutX="217.0" layoutY="83.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtLogradouro" editable="false" layoutX="217.0" layoutY="112.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtComplemento" editable="false" layoutX="217.0" layoutY="142.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtBairro" editable="false" layoutX="217.0" layoutY="169.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtLocalidade" editable="false" layoutX="217.0" layoutY="196.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtUF" editable="false" layoutX="217.0" layoutY="247.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtIBGE" editable="false" layoutX="217.0" layoutY="279.0" prefHeight="24.0" prefWidth="148.0" />
+      <TextField fx:id="txtDDD" editable="false" layoutX="217.0" layoutY="309.0" prefHeight="24.0" prefWidth="148.0" />
+      <Button fx:id="btnBuscarCEP" layoutX="420.0" layoutY="83.0" mnemonicParsing="false" onMouseClicked="#buscarCEP" text="Buscar CEP" />
+   </children>
+</AnchorPane>
